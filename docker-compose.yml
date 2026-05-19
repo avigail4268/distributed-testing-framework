@@ -1,0 +1,8 @@
+# File: docker-compose.yml
+version: '3.8'
+
+services:
+  worker:
+    build: .
+    image: worker-image
+    network_mode: "host"
